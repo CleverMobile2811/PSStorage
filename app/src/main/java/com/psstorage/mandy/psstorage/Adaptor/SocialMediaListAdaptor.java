@@ -24,7 +24,7 @@ public class SocialMediaListAdaptor extends ArrayAdapter<SocialMediaCell> {
     int layoutResourceId;
     SocialMediaCell data[] = null;
 
-    public SocialMediaListAdaptor(SocialMediaFragment context, int layoutResourceId, SocialMediaCell[] data) {
+    public SocialMediaListAdaptor(Context context, int layoutResourceId, SocialMediaCell[] data) {
         super(context, layoutResourceId, data);
         this.layoutResourceId = layoutResourceId;
         this.context = context;

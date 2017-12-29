@@ -27,11 +27,11 @@ public class SocialMediaFragment extends Fragment {
                         new SocialMediaCell()
                 };
 
-        SocialMediaListAdaptor adapter = new SocialMediaListAdaptor(this,
+        SocialMediaListAdaptor adapter = new SocialMediaListAdaptor(getActivity(),
                 R.layout.socialmedia_cell, weather_data);
 
 
-        listView = (ListView)findViewById(R.id.socialmedia_listview);
+        listView = (ListView)getView().findViewById(R.id.socialmedia_listview);
 
 //        View header = (View)getLayoutInflater().inflate(R.layout.listview_header_row, null);
 //        listView.addHeaderView(header);
